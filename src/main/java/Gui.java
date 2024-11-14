@@ -254,7 +254,7 @@ public class Gui {
  * @throws IOException If an error occurs while fetching data from the WeatherApi.
  */
     private static JSONObject get_Specific_Weather(String city, String year, String month, String day) throws IOException {
-        return WeatherApi.get_Specific_Weather(city, year, month, day);
+        return WeatherByDate.getWeatherByDate(city, year, month, day);
     }
 /**
  * Extracts the content of a chat response message from the OpenAI GPT model's response JSON.

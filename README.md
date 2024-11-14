@@ -6,12 +6,12 @@ This Weather Application provides temperature data for a specified city and date
 ## Features
 - **Date-Specific Weather:** Retrieves hourly temperatures for a specified day in a chosen city.
 - **Free-Text Query:** Parses a free-text description of city and date to fetch relevant weather data.
-- **Real-Time Weather:** Optionally retrieves the current temperature for a city.
+
 
 ## Project Structure
 
 - **ChatGptApi.java**: Handles requests to the OpenAI GPT API to parse free-text input into structured city and date values.
-- **WeatherApi.java**: Communicates with the Tomorrow.io API to fetch weather data:
+- **WeatherByDate.java**: Communicates with the Tomorrow.io API to fetch weather data:
     - **get_Specific_Weather()**: Retrieves hourly temperatures for a specified city and date.
     - **get_Real_Time_Weather()**: Retrieves the current temperature for a city.
 - **Gui.java**: Builds the user interface where:
